@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 100px;
+    z-index: 10;
+}
+
+header .logo {
+    position: relative;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    position: relative;
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition: 0.6s;
+}
+
+header.sticky {
+    padding: 5px 100px;
+    background: #fff;
+}
+
+header.sticky .logo,
+header.sticky ul li a {
+    color: #000;
+}
+
+.map {    
+    position: relative;
+    width: 100%;
+    margin-top: 200px;
+    margin-left: 200px;
+    /* margin-right: 200px; */
+    overflow: hidden;
+}
+
+.map__image {
+    width: 50%;
+    float: left;
+}
+
+.map__image path {
+    fill:darkturquoise ;
+    stroke: #FFF;
+    stroke-width: 1px;
+    transition: fill 0.3s;
+}
+
+.map__image .is-active path {
+    fill: darkorchid;
+}
+
+.map__list {
+    width: 50%;
+    float: right;
+    white-space: nowrap; 
+    text-align: center;
+}
+
+.map__list ul {
+    width: 50%;
+    margin-top: 200PX;
+    gap: 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;    
+    
+}
+
+.map__list li {
+    list-style: none;
+    margin: 0px 10px;
+
+    background: linear-gradient(to bottom, rgb(86, 240, 227), rgba(192, 226, 222, 0.5));
+    border-radius: 5px;
+    padding: 10px;
+    width: 120px;    
+}
+
+.map__list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.map__list a.is-active {
+    color: darkorchid;
+    font-weight: 900;
+}
+
+.copyrightText {
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.copyrightText p {
+    color: #fff;
+    font-weight: 500;
+
+}
